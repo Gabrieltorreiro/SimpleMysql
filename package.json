@@ -1,0 +1,23 @@
+{
+  "name": "SimpleMysql",
+  "version": "1.0.0",
+  "description": "This is a personal module to simplify mysql queries",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gabrieltorreiro/SimpleMysql.git"
+  },
+  "keywords": [],
+  "author": "Gabriel Torreiro",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Gabrieltorreiro/SimpleMysql/issues"
+  },
+  "homepage": "https://github.com/Gabrieltorreiro/SimpleMysql#readme",
+  "dependencies": {
+    "mysql": "^2.18.1"
+  }
+}
