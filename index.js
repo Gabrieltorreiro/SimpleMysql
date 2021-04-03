@@ -1,18 +1,12 @@
-const sql = require('mysql');
+const mysql = require("./src/mysql")({
+    host: 'localhost',
+    port: 3306,
+    user: 'admin',
+    password: '123456',
+    database: 'marketplace',
+    table: 'user'
+});
 
-function mysql(config) {
-    this.conn = sql.createConnection(config);
-    this.conn.connect();
-    this.table = config.table;
-    this.db = config.database;
-
-    this.selectAll = function (callback) {
-        this.conn.query(`SELECT * FROM ${this.table};`, (err, res) => {
-            callback(res);
-        });
-    }
-
-    return this;
-}
-
-module.exports = mysql;
+mysql.selectAll((data)=>{
+    console.log(data);
+});
